@@ -145,3 +145,22 @@ button { font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+
+/* Wi-Fi multiplayer guide */
+.feature-link { display:inline-block; margin-top:15px; color:#f0bd50; font-size:11px; font-weight:800; }
+.feature-link:hover { color:#ffe19b; }
+.multiplayer { background:#1b1e29; }
+.multiplayer-intro { max-width:650px; margin:20px 0 0; color:#b8b7c2; font-size:14px; line-height:1.8; }
+.multiplayer-steps { margin-top:34px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.multiplayer-step { padding:25px; border:1px solid var(--line); border-radius:13px; background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015)); }
+.step-number { color:var(--gold); font:700 13px 'Space Grotesk',sans-serif; letter-spacing:.14em; }
+.multiplayer-step h3 { margin:13px 0 15px; font:700 20px 'Space Grotesk',sans-serif; }
+.multiplayer-step ol { margin:0; padding-left:20px; color:#c1c0ca; font-size:13px; line-height:1.85; }
+.multiplayer-step li + li { margin-top:7px; }
+.multiplayer-step code,.multiplayer-note code { padding:2px 6px; border:1px solid rgba(240,189,80,.22); border-radius:5px; background:rgba(240,189,80,.08); color:#ffe19b; font:600 12px 'Consolas',monospace; white-space:nowrap; }
+.multiplayer-step kbd { padding:2px 7px; border:1px solid rgba(255,255,255,.22); border-radius:5px; background:#282c38; color:#fff; font:700 11px 'Consolas',monospace; }
+.multiplayer-note { max-width:900px; margin-top:18px; padding:15px 18px; border:1px solid rgba(240,189,80,.3); border-radius:10px; background:rgba(240,189,80,.07); }
+.multiplayer-note strong { color:var(--gold); font-size:12px; }
+.multiplayer-note p { margin:6px 0 0; color:#c7c4cd; font-size:12px; line-height:1.8; }
+@media (max-width:640px) { .multiplayer-steps { grid-template-columns:1fr; } .multiplayer-step { padding:20px; } }
